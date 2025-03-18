@@ -56,3 +56,29 @@ int main()
     }while (num>0);
 
 }
+
+
+/*Elabore um programa que leia um número e imprima todos os
+números divisíveis por 4 que sejam menores que este número lido*/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL,"portuguese");
+
+    int num, i;
+    printf("\n\tDigite um número positivo: ");
+    scanf("%d", &num);
+
+    for(i=0 ; num>i; i++)
+    {
+        if (i%4==0 && i!=0)
+        {
+        printf("%d, ", i);
+        }
+
+    }
+}
